@@ -1,0 +1,48 @@
+{
+    "name": "masterfermin02/php-audio-text-summary",
+    "description": "PHP package to transcribe recordings or audio to text and summary using google speech to text and chatGPT",
+    "keywords": [
+        "masterfermin02",
+        "php-audio-text-summary"
+    ],
+    "homepage": "https://github.com/masterfermin02/php-audio-text-summary",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fermin Perdomo",
+            "email": "masterfermin02@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "google/cloud-speech": "^1.9",
+        "openai-php/client": "^0.3.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.2",
+        "phpunit/phpunit": "^9"
+    },
+    "autoload": {
+        "psr-4": {
+            "DaimonDove\\Transcription\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DaimonDove\\Transcription\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
